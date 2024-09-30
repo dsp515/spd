@@ -1,0 +1,10 @@
+<p>home works!</p>
+<div class="container">
+    <h2>Available Quizzes</h2>
+    <ul>
+      <li *ngFor="let quiz of quizzes">
+        <button><a (click)="startQuiz(quiz.id)">{{ quiz.title }}</a></button>
+      </li>
+    </ul>
+  </div>
+  

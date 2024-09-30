@@ -1,0 +1,19 @@
+<p>quiz works!</p>
+<div class="container">
+    <h2>{{ quizTitle }}</h2>
+    
+    <div *ngIf="currentQuestion < questions.length">
+      <h3>Question {{ currentQuestion + 1 }}: {{ questions[currentQuestion].question }}</h3>
+      <ul>
+        <li *ngFor="let option of questions[currentQuestion].options">
+          <button (click)="submitAnswer(option.isCorrect)">{{ option.answer }}</button>
+        </li>
+      </ul>
+    </div>
+  
+    <div *ngIf="currentQuestion >= questions.length">
+      <h3>Quiz Completed!</h3>
+      <button (click)="viewResult()">View Result</button>
+    </div>
+  </div>
+  

@@ -1,0 +1,26 @@
+h3 {
+    color: #6200ea;
+  }
+  
+  ul {
+    padding: 0;
+    list-style: none;
+  }
+  
+  li {
+    margin: 10px 0;
+    text-align: center;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background-color: #03dac6;
+    border-radius: 8px;
+  }
+  
+  button:hover {
+    background-color: #018786;
+  }
+  
